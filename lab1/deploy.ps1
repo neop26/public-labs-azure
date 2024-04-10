@@ -1,9 +1,9 @@
 ## Get key data
-$publicKeyPath = "azvm_key.pub"
+$publicKeyPath = "azvm_key.pub" # Change to your location of Public Key
 $sshKey = Get-Content $publicKeyPath
 $secureSSHKey = ConvertTo-SecureString $sshKey -AsPlainText -Force
 
-$privateKeyPath = "azvm_key" # Optional if you want to connect to the VM after deployment
+$privateKeyPath = "azvm_key" # Optional if you want to connect to the VM after deployment & Change to your location of Private Key
 
 ## Deploy to Azure
 $resourceGroupName = "test-rg"
